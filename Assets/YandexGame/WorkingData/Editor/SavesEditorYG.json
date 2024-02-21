@@ -1,0 +1,15 @@
+{
+    "idSave": 26,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "money": 1,
+    "GameData": "{\"IDShopList\":[],\"IDPurchaseList\":[],\"Money\":5000,\"CompleteLVL\":0}",
+    "GameSettingData": "",
+    "newPlayerName": "Hello!",
+    "openLevels": [
+        false,
+        true,
+        false
+    ]
+}
