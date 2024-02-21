@@ -1,22 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class MusicHandler : MonoBehaviour
 {
     private AudioSource _musicSource;
-    public static MusicHandler Singleton { get; private set; }
+    public static MusicHandler Singleton { get; private set; } 
 
     private void Awake()
     {
-        if (_musicSource == null)
+        if (Singleton == null)
         {
-            _musicSource = GetComponent<AudioSource>();  
             Singleton = this;
+            _musicSource = GetComponent<AudioSource>();  
         }
         else
             Destroy(gameObject);
+        
         DontDestroyOnLoad(gameObject);
     }
 

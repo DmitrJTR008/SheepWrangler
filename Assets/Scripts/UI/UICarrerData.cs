@@ -24,10 +24,11 @@ public class UICarrerData : MonoBehaviour
 
     public void InitLevels(int levelComplete)
     {
-        int totalLevels = Mathf.Clamp(levelComplete, 0, ButtonSelectLevelList.Count - 1);
-        for (int i = 0; i <= totalLevels; i++)
-        {
-            ButtonSelectLevelList[i].interactable = true;
-        }
+        
+        //int totalLevels = Mathf.Clamp(levelComplete, 0, ButtonSelectLevelList.Count - 1);
+        //for (int i = 0; i <= totalLevels; i++)
+        //{
+        //    ButtonSelectLevelList[i].interactable = true;
+        //}
     }
 }

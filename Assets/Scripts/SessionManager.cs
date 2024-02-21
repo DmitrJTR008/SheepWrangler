@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class SessionManager : BaseSceneManager
 {
     [SerializeField] private int sheepCountSession;
@@ -114,5 +116,16 @@ public class SessionManager : BaseSceneManager
             _timerInstance.StopTimer();
         view.CloseAdsDialog();
         view.HandleEndGamePanels(true);
+    }
+    
+    // DEBUG temporarily
+    public void GOMENU()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GORESTART()
+    {
+        SceneManager.LoadScene(1);
     }
 }
